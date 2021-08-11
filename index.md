@@ -6,7 +6,7 @@
 
 Method | Command
 -------|--------
-nmap | `nmap -sC -sV`
+nmap | ```nmap -sC -sV```
 
 ## Active Directory
 
