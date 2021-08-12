@@ -15,7 +15,7 @@ Linux | Windows
 
 ***Setup commands***
 
-*Running a script on a low privilege user will cause an error, run the command below*
+*Running a script on a low privilege user will cause an error, run the command below in Powershell*
 
 `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
