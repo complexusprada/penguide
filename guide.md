@@ -54,6 +54,6 @@ Description | Commands&Links
 
 Method | Command
 -------|--------
-Script | `rpcdump.py @192.168.1.10 \| egrep MS-RPRN\|MS-PAR`
+Script | `rpcdump.py @192.168.1.10 \| egrep 'MS-RPRN\|MS-PAR'`
 
 
